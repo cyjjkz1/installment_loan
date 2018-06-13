@@ -11,6 +11,16 @@ export default {
 }
 </script>
 
+<!-- 使用less来写样式 -->
+<style scoped lang="less" type="less" rel="stylesheet/less">
+  .testp{
+    width: 300px;
+    height: 150px;
+    background: red;
+  }
+</style>
+
+<!--  使用sass来写样式
 <style scoped lang="scss" type="scss" rel="stylesheet/scss">
 /*#app {*/
   /*font-family: 'Avenir', Helvetica, Arial, sans-serif;*/
@@ -27,3 +37,4 @@ export default {
   }
 
 </style>
+-->
