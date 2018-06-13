@@ -11,7 +11,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped lang="scss" type="scss" rel="stylesheet/scss">
 /*#app {*/
   /*font-family: 'Avenir', Helvetica, Arial, sans-serif;*/
   /*-webkit-font-smoothing: antialiased;*/
@@ -21,7 +21,7 @@ export default {
   /*margin-top: 60px;*/
 /*}*/
   .testp{
-    width: 450px;
+    width: 300px;
     height: 150px;
     background: red;
   }
