@@ -1,0 +1,180 @@
+@import "./base";
+
+section.section_reg {
+  width: 100%;
+  padding: 0 0 0 $padding_width;
+  box-sizing: border-box;
+  border-top: 1px solid $border_color;
+  border-bottom: 1px solid $border_color;
+  background: white;
+  margin: 0.6rem 0;
+  dl.hang {
+    width: 100%;
+    padding: 0.1rem $padding_width 0.1rem 0;
+    box-sizing: border-box;
+    border-top: 1px solid $border_color;
+    line-height: 1.2rem;
+    font-size: $f32;
+    &:nth-child(1) {
+      border: 0;
+    }
+    &:after {
+      content: " ";
+      display: block;
+      font-size: 0;
+      height: 0;
+      clear: both;
+      visibility: hidden;
+      overflow: hidden;
+    }
+    dt {
+      float: left;
+      width: 30%;
+      position: relative;
+      span.right_arrow {
+        display: inline-block;
+        position: absolute;
+        width: 0.6rem;
+        height: 0.6rem;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 0.6rem;
+        background: $red;
+        top: 0.3rem;
+        margin-left: 10px;
+        display: none;
+        i {
+          color: white;
+          font-size: $f28;
+        }
+      }
+    }
+    dd {
+      float: right;
+      width: 70%;
+      text-align: right;
+      line-height: 1.2rem;
+      input.text {
+        width: 100%;
+        background: none;
+        border: 0;
+        height: 1.2rem;
+        line-height: 1.2rem;
+        font-size: $f32;
+        text-align: right;
+        &.text_shot {
+          width: 55%;
+          margin-right: 1%;
+        }
+        &.text_shot2 {
+          width: 30%;
+        }
+        &.dd_select {
+          width: 90%;
+          display: block;
+          float: right;
+          padding-right: 5px;
+          color: $grey;
+          line-height: .6rem;
+          height: .6rem;
+          position: relative;
+          top: .38rem;
+          padding-bottom: .2rem;
+        }
+      }
+      textarea.text {
+        width: 90%;
+        display: block;
+        float: right;
+        padding-right: 5px;
+        color: $grey;
+        line-height: .5rem;
+        height: auto;
+        position: relative;
+        top: .32rem;
+        margin-bottom: .2rem;
+        font-size: $f32;
+        overflow-y: auto;
+        text-align: right;
+        background: none;
+        border: 0;
+        resize : none;
+      }
+      p.entycode {
+        width: 40%;
+        display: inline-block;
+        border: 1px solid $orange;
+        border-radius: 5px;
+        color: $orange;
+        text-align: center;
+        height: .8rem;
+        line-height: .8rem;
+        span.get_entycode {
+          width: 100%;
+        }
+        span.show_entycode {
+          width: 100%;
+        }
+      }
+      span.dd_select {
+        width: 85%;
+        display: block;
+        float: right;
+        padding-right: 5px;
+        color: $grey;
+        line-height: .6rem;
+        position: relative;
+        top: .4rem;
+        padding-bottom: .2rem;
+      }
+      span.arrow {
+        width: 10%;
+        display: block;
+        float: right;
+        background: url('../../assets/arrow.svg') center center no-repeat;
+        background-size: 0.2rem auto;
+        width: 0.36rem;
+        height: 0.72rem;
+        position: relative;
+        top: 0.24rem;
+      }
+    }
+    &.dt_long {
+      dt {
+        width: 46%;
+      }
+      dd {
+        width: 53%;
+      }
+    }
+    &.error_data {
+      dt {
+        span.right_arrow {
+          display: inline-block;
+        }
+      }
+      dd {
+        color: $red;
+        input {
+          color: $red;
+        }
+        span.dd_select {
+          color: $red;
+        }
+      }
+    }
+    &.success {
+      dd {
+        span.dd_select {
+          color: $black;
+        }
+        input.dd_select {
+          color: $black;
+        }
+        textarea.text {
+          color: $black;
+        }
+      }
+    }
+  }
+}
