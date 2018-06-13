@@ -1,0 +1,1 @@
+{"version":3,"sources":["test.0be24a11d9a6e297bb9b020d04e4eb19.css"],"names":[],"mappings":"AACA,wBACE,WAAY,AACZ,YAAa,AACb,cAAgB,CACjB","file":"test.0be24a11d9a6e297bb9b020d04e4eb19.css","sourcesContent":["\n.testp[data-v-1e2f83a3] {\n  width: 4rem;\n  height: 2rem;\n  background: red;\n}"]}
