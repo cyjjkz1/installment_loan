@@ -15,16 +15,16 @@
     <div class="page_bottom">
       <div class="page_bottom_button">查看额度</div>
     </div>
-    <loading :show="show1" :text="loading_title"></loading>
-    <alert v-model="show" :title="alert_msg"> {{ '还没啊~' }}</alert>
+    <!--<loading :show="show1" :text="loading_title"></loading>-->
+    <!--<alert v-model="show" :title="alert_msg"> {{ '还没啊~' }}</alert>-->
   </div>
 </template>
 
 <script>
-  import { Loading, Alert } from 'vux'
+//  import { Loading, Alert } from 'vux'
   export default {
     name: 'App',
-    components: {Loading,Alert},
+//    components: {Loading, Alert},
     data () {
       return {
         top_banner_url: "https://www.baidu.com/img/bd_logo1.png?where=super",
