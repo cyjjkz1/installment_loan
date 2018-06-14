@@ -15,14 +15,13 @@
     <div class="page_bottom">
       <div class="page_bottom_button">查看额度</div>
     </div>
-    <loading :show="show1" :text="text1"></loading>
-    <alert v-model="show" :title="'你吃饭了吗？'"> {{ '还没啊~' }}</alert>
+    <loading :show="show1" :text="loading_title"></loading>
+    <alert v-model="show" :title="alert_msg"> {{ '还没啊~' }}</alert>
   </div>
-
 </template>
 
 <script>
-  import { Loading,Alert} from 'vux'
+  import { Loading, Alert } from 'vux'
   export default {
     name: 'App',
     components: {Loading,Alert},
@@ -33,6 +32,8 @@
         has_users_count: 2304,
         show1: true,
         show: true,
+        loading_title:"你好",
+        alert_msg: "你吃饭了吗？"
       }
     }
   }
