@@ -3,14 +3,20 @@ const path = require('path')
 const utils = require('./utils')
 const config = require('../config')
 const vueLoaderConfig = require('./vue-loader.conf')
+/**
+ * 使用vux  配置
+ */
+const vuxLoader = require('vux-loader')
 
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
 }
 
 
-
-module.exports = {
+/**
+ * 使用vux  配置
+ */
+const webpackConfig = {
   context: path.resolve(__dirname, '../'),
   /**
    * 多页面配置的入口不再是单一入口，注释掉单一入口，添加多入口  第四步
@@ -27,7 +33,7 @@ module.exports = {
       : config.dev.assetsPublicPath
   },
   resolve: {
-    extensions: ['.js', '.vue', '.json'],
+    extensions: ['.js', '.vue', '.json', '.less'],
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src'),
@@ -84,3 +90,5 @@ module.exports = {
     child_process: 'empty'
   }
 }
+
+module.exports = vuxLoader.merge(webpackConfig, { plugins: ['vux-ui'] })

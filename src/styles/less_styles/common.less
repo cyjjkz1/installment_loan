@@ -1,0 +1,223 @@
+@import "themecolor";
+@images: '../img';
+body,
+p,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+input,
+select,
+textarea,
+button,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+}
+
+ul,
+dl,
+ol {
+    list-style: none;
+}
+
+img,
+fieldset,
+input[type="submit"] {
+    border: 0 none;
+}
+
+img {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+em {
+    font-style: normal;
+}
+
+strong {
+    font-weight: normal;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+button,
+input[type="button"] {
+    cursor: pointer;
+    border: 0 none;
+}
+
+textarea {
+    word-wrap: break-word;
+    resize: none;
+}
+
+
+/* word-wrap for opera, resize for webkit */
+
+menu {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    -webkit-user-select: none;
+    -webkit-text-size-adjust: none;
+    font-family: Arial, helvetica, "微软雅黑", "Microsoft Yahei", sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+input[type="number"] {
+    -webkit-user-select: text;
+}
+
+a,
+button,
+input,
+img {
+    -webkit-touch-callout: none;
+}
+
+
+/* 1.ios 长按时不触发系统的菜单 2.禁止长按时下载图片 */
+
+input,
+select,
+textarea {
+    outline: none;
+}
+
+a,
+button,
+input {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a,
+a:link,
+a:visited,
+a:hover {
+    text-decoration: none;
+    color: @black;
+    cursor: pointer;
+}
+
+@media all and (-webkit-transform-3d) {
+    /* android4.0+ ios4+ 恢复按钮被点击时产生的效果 */
+    a,
+    button,
+    input {
+        -webkit-tap-highlight-color: rgba(130, 130, 130, .52)
+    }
+    ;
+}
+
+a {
+    text-decoration: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    background-color: white;
+    background-image: none;
+    color: rgb(0, 0, 0);
+}
+
+section,
+div,
+dl,
+dt,
+dd,
+footer {
+    box-sizing: border-box;
+}
+
+
+/* ==================共用============================================================ */
+
+body {
+    background: @background_color ;
+    color: @black;
+    /* 增加该属性，可以增加弹性 */
+    -webkit-overflow-scrolling: touch;
+}
+
+body.bg_white {
+    background: white;
+}
+
+#wap {
+    margin: 0 auto;
+    width: 100%;
+    //max-width: 10rem;
+    height: 100%;
+    font-size: @font_size;
+}
+
+/* ======================选择高亮和弹出菜单=========================== */
+
+*{  -webkit-tap-highlight-color: rgba(0,0,0,0);  -webkit-tap-highlight-color:transparent;  }
+
+* {
+  /*ios，如果不行可以加一个透明遮罩层*/
+  -webkit-touch-callout:none;
+  touch-callout:none;
+}
+*:not(input,textarea){
+  /*安卓*/
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+input{
+    word-break:break-all;
+}
+
+body
+{
+    -webkit-user-select:none;
+    user-select:none;
+}
+[v-cloak] {
+    display: none;
+}
+
+

@@ -15,20 +15,27 @@
     <div class="page_bottom">
       <div class="page_bottom_button">查看额度</div>
     </div>
+    <loading :show="show1" :text="text1"></loading>
+    <alert v-model="show" :title="'你吃饭了吗？'"> {{ '还没啊~' }}</alert>
   </div>
+
 </template>
 
 <script>
-export default {
-  name: 'App',
-  data () {
-    return {
-      top_banner_url: "https://www.baidu.com/img/bd_logo1.png?where=super",
-      max_load_amount: "￥20000",
-      has_users_count: 2304,
+  import { Loading,Alert} from 'vux'
+  export default {
+    name: 'App',
+    components: {Loading,Alert},
+    data () {
+      return {
+        top_banner_url: "https://www.baidu.com/img/bd_logo1.png?where=super",
+        max_load_amount: "￥20000",
+        has_users_count: 2304,
+        show1: true,
+        show: true,
+      }
     }
   }
-}
 </script>
 
 <!-- 使用less来写样式 -->
@@ -50,8 +57,8 @@ export default {
 </style>-->
 
 <!--  使用sass来写样式 -->
-<style scoped lang="scss" type="scss" rel="stylesheet/scss">
-  @import "../../styles/common";
+<style scoped lang="less" type="less" rel="stylesheet/less">
+  @import "../../styles/less_styles/common";
   #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
