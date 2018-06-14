@@ -27,3 +27,4 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 - 第一步，在pages下载新建一个页面的文件夹，名字为页面名字（如home）。
 - 第二步，在pages下的test目录拷贝 App.vue、index.html、index.js到新建的页面目录下，修改index.html、index.js名字为页面名字(home.html、home.js)。
 - 第三步，在App.vue中添加新页面的标签、业务逻辑和样式。
+### 样式使用less
