@@ -32,7 +32,7 @@
         has_users_count: 2304,
         show1: true,
         show: true,
-        loading_title:"你好",
+        loading_title:"",
         alert_msg: "你吃饭了吗？"
       }
     }
